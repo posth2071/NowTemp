@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_radius">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="네트워크에 연결할 수 없습니다.\n네트워크 상태 확인 후\n다시 시도해 주세요."
+        android:textColor="@color/dialog_textColor"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_LineColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/network_cacnel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="취소"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/dialog_textColor"
+            android:background="@android:color/transparent"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_LineColor" />
+
+        <Button
+            android:id="@+id/network_retry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="재시도"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/dialog_textColor"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
