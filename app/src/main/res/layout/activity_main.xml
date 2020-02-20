@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/map_rain"
+    android:id="@+id/rootLayout"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:paddingTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/main_tv_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안성시"
+            android:textColor="@color/main_textColor"
+            android:textStyle="bold"
+            android:textSize="30dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/main_tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="21\u00B0"
+                    android:textColor="@color/main_textColor"
+                    android:textSize="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_hightemp"
+                            android:scaleType="fitXY"/>
+
+                        <TextView
+                            android:id="@+id/main_tv_highset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15"
+                            android:textSize="20dp"
+                            android:textColor="@color/main_textColor" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="left|center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_lowtemp"
+                            android:scaleType="fitXY"/>
+
+                        <TextView
+                            android:id="@+id/main_tv_lowset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textSize="20dp"
+                            android:textColor="@color/main_textColor" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/main_iv_weather"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_sunny"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/main_tv_weatherState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="구름"
+                        android:textSize="30dp"
+                        android:textColor="@color/main_textColor"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="미세먼지"
+                    android:textSize="15dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/main_textColor"/>
+                    <TextView
+                        android:id="@+id/main_fineDust"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="70㎍/m³ 나쁨"
+                        android:textSize="15dp"
+                        android:textColor="@color/main_textColor"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:text="초미세먼지"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/main_textColor"/>
+                    <TextView
+                        android:id="@+id/main_ultra_fineDust"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="70㎍/m³ 나쁨"
+                        android:textSize="15dp"
+                        android:textColor="@color/main_textColor"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#44222222"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="20dp"
+                    android:textColor="@color/main_textColor"/>
+                <TextView
+                    android:id="@+id/main_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="87%"
+                    android:textSize="20dp"
+                    android:textColor="@color/main_textColor"/>
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#111111" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="풍속"
+                    android:textSize="20dp"
+                    android:textColor="@color/main_textColor"/>
+                <TextView
+                    android:id="@+id/main_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.37m/s"
+                    android:textSize="20dp"
+                    android:textColor="@color/main_textColor"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/main_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_share"
+            android:text="" />
+
+        <Button
+            android:id="@+id/main_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_menu"
+            android:text="" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

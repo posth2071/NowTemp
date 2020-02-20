@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">나우날씨</string>
+
+    <!--
+        weather / icon
+        0 번개 1 이슬비 2 비 3 눈 4 맑음 5 구름
+    -->
+    <string name="image_weather0">map_lightning</string>
+    <string name="image_weather1">map_light_rain</string>
+    <string name="image_weather2">map_rain</string>
+    <string name="image_weather3">map_snow</string>
+    <string name="image_weather4">map_sunny</string>
+    <string name="image_weather5">map_cloud</string>
+
+    <string name="ic_weather0">ic_lightning</string>
+    <string name="ic_weather1">ic_light_rain</string>
+    <string name="ic_weather2">ic_rain</string>
+    <string name="ic_weather3">ic_snow</string>
+    <string name="ic_weather4">ic_sunny</string>
+    <string name="ic_weather5">ic_cloud</string>
+</resources>
